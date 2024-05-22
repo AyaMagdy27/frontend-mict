@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <form action="" >
+            <h1>Booking Form</h1>
+
+            <label for="Username"> UserName : </label>  &nbsp; &nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder="Enter Username"n id="Username" required><br><br>
+            
+            <label for="email"> Email :</label>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+            <input type="email" placeholder="example@gmail.com" id="email" required><br><br>
+            
+            <label for="tel">Phone Number :</label>
+            <input type="tel" placeholder="Enter your phone number" id="tel" pattern="[0]{1}[1]{1}[0-6]{1}[0-9]{8}"required><br><br>
+
+            <label for="date"> Birthday :</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" id="date" placeholder="Enter your Birthday" required ><br><br>
+
+            <label for="Specialty"> Specialty:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" placeholder=" Specialty" id="Specialty" required><br><br> 
+
+            <label for="dr">Doctor : </label> &nbsp;&nbsp;
+            <select id="doctorname">
+                <option>----</option>
+                <optgroup label="Dentistry">
+                    <option>Dr/ Mohammed Atef</option>
+                    <option>Dr/ Malak Abdelaziz</option>
+                    <option> Dr/ Ahmed Abdelazim</option>
+                </optgroup>
+                <optgroup label="Gastroenterology">
+                    <option>Dr/ Mohammed Magdy</option>
+                    <option>Dr/ Mahmod Abdelaziz</option>
+                    <option> Dr/ Omer Abdelazim</option>
+                </optgroup>
+                <optgroup label="Neurology">
+                    <option>Dr/ Zain Atef</option>
+                    <option>Dr/ Farida Ahmed</option>
+                    <option> Dr/ Ahmed Magdy</option>
+                </optgroup>
+                <optgroup label="Pediatrics">
+                    <option>Dr/ Aya Magdy</option>
+                    <option>Dr/ Kareem Ahmed</option>
+                    <option> Dr/ Ahmed Badr</option>
+                </optgroup>
+                <optgroup label="Cardiology">
+                    <option>Dr/ Mohammed Abdelrahman</option>
+                    <option>Dr/ Yara Ahmed</option>
+                    <option> Dr/ Sara Mostafa</option>
+                </optgroup>
+            </select><br><br>
+            <label for="date">Date:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" id="date" name="date" required ><br><br>
+
+            <label for="time"> Time :</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="time" placeholder="time" id="time" required>
+            <br> <br>
+            <button type="submit" >Submit</button>
+            
+        </form>
+    </center>
+</body>
+</html>
