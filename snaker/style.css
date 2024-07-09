@@ -160,6 +160,15 @@
     gap: 30px;
 }
 
+.offer {
+    font-size: 18px;
+    background-color: #000000d3;
+    color: #FFFFFF;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    padding: 2px 15px;
+}
 .btn {
     display: flex;
     gap: 30px;
