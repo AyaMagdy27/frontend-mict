@@ -1,0 +1,16 @@
+@import "stylehome.css";
+
+.cards {
+    width: 95%;
+    margin-top: 20px;
+}
+.card {
+    width: 95%;
+    height: 200px;
+    display: flex;
+}
+.img-sty {
+    width: 200px;
+    border-radius: 10px;
+    margin-right: 20px;
+}

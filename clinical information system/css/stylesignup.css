@@ -1,0 +1,14 @@
+@import "stylehome.css";
+.ptext {
+    font-weight: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.ptext a {
+    color: var(--main--color);
+    text-decoration: none;
+    margin-left: 5px;
+}
+.ptext a:hover {
+    color: var(--hover-color);
+}

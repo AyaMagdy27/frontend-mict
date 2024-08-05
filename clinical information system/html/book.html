@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylehome.css">
+    <script src="https://kit.fontawesome.com/612befecb0.js" crossorigin="anonymous"></script>
+    <script src="../js/doctorselect.js"></script>
+    <link rel="stylesheet" href="../css/stylebook.css">
+    <script src="../js/anim.js"></script>
+    <title>Book Now</title>
+</head>
+
+<body>
+    <!--header-->
+    <div id="header"></div>
+
+    <div class="form">
+        <form action="">
+            <!--booking form title -->
+            <h1 class="form-title">Booking Form</h1>
+
+        <div class="form-container">
+            <div>
+                <label class="label-sty" for="Username"> Patient Name : </label>
+                <input class="input-sty" type="text" placeholder=" patient name" id="Username" required>
+            </div>
+
+            <div>
+                <label class="label-sty" for="who"> Who is the enquiry for? </label>
+                <select class="select-sty" required id="who">
+                    <option value="">-----</option>
+                    <option value=""> Myself</option>
+                    <option value="">Someone else</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="label-sty" for="tel">Phone Number :</label>
+                <input class="input-sty" type="tel" placeholder="Enter your phone number" id="phone"
+                    pattern="[0]{1}[1]{1}[0-6]{1}[0-9]{8}" required>
+            </div>
+            <label class="label-sty" for="date"> Birthday :</label>
+            <input class="input-sty" type="date" id="date" placeholder="Enter your Birthday" required>
+
+            <div>
+                <label class="label-sty" for="specialty">Specialty:</label>
+                <select class="select-sty" required id="specialty">
+                    <option value="">-----</option>
+                    <option value="dentistry">Dentistry</option>
+                    <option value="gastroenterology">Gastroenterology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="urology">Urology</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="rheumatology">Rheumatology</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="label-sty" for="dr">Doctor : </label>
+                <select class="select-sty" required id="doctorname">
+                    <option>----</option>
+                    <optgroup label="Dentistry">
+                        <option>Dr/ Mohammed Atef</option>
+                        <option>Dr/ Malak Abdelaziz</option>
+                        <option> Dr/ Ahmed Abdelazim</option>
+                    </optgroup>
+                    <optgroup label="Gastroenterology">
+                        <option>Dr/ Mohammed Magdy</option>
+                        <option>Dr/ Mahmoud Abdelaziz</option>
+                        <option> Dr/ Omer Abdelazim</option>
+                    </optgroup>
+                    <optgroup label="Neurology">
+                        <option>Dr/ Zain Atef</option>
+                        <option>Dr/ Farida Ahmed</option>
+                        <option> Dr/ Ahmed Magdy</option>
+                    </optgroup>
+                    <optgroup label="Pediatrics">
+                        <option>Dr/ Hala Magdy</option>
+                        <option>Dr/ Hoda Ahmed</option>
+                        <option> Dr/ Eman Badr</option>
+                    </optgroup>
+                    <optgroup label="Cardiology">
+                        <option>Dr/ Mohammed Abdelrahman</option>
+                        <option>Dr/ Yara Ahmed</option>
+                        <option> Dr/ Sara Mostafa</option>
+                    </optgroup>
+                    <optgroup label="Urology">
+                        <option>Dr/ Waled Mohammed </option>
+                        <option>Dr/ Gamila Hassan</option>
+                        <option> Dr/ Heba Gamal </option>
+                    </optgroup>
+                    <optgroup label="Rheumatology">
+                        <option>Dr/Magdy Onaim</option>
+                        <option>Dr/ Mahmoud Elsayad</option>
+                        <option> Dr/ Alaa ElGamry</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <label class="label-sty" for="date">Date:</label>
+                <input class="input-sty" type="date" id="date" name="date" required>
+            </div>
+
+            <div>
+                <label class="label-sty" for="time"> Time :</label>
+                <input class="input-sty" type="time" placeholder="time" id="time" required>
+            </div>
+            <button class="bsubmit" type="submit">Book Appointment</button>
+           </div>
+            
+
+        </form>
+    </div>
+
+    <!-- footer -->
+    <div id="footer"></div>
+
+    <script src="../js/anim.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/doctorselect.js"></script>
+    <script src="../js/specialitydelay.js"></script>
+    <script src="../js/menulist.js"></script>
+
+</body>
+
+</html>

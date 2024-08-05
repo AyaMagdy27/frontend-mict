@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stylehome.css">
+    <title>header</title>
+</head>
+
+<body>
+    <!--header-->
+    <div class="header">
+        <nav>
+
+            <!--logo-->
+            <div class="logo">
+                <a href="index.html"><img id="logoimg" src="../images/newlogo.png"></a>
+            </div>
+
+            <a class="logo2-div" href="index.html"><h1 class="logo2">HealthCare</h1></a>
+            <div class="menubar" id="droplist" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+
+            <!--links-->
+            <div class="dropdown-hover" id="dropdownMenu">
+                <div class="links">
+                    <a href="index.html" class="link"> Home</i></a>
+                    <a href="specality.html" class="link">Specality</a>
+    
+                    <div class="splink">
+                        <div class="dropdown">
+                            <div onclick="myFunction()" href="index.html" class="link" id="btnsty">Doctors <i
+                                    class="fa-solid fa-caret-down"></i></div>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="dentistry.html">Dentistry</a>
+                                <a href="neurology.html">Neurology</a>
+                                <a href="pediatrics.html">Pediatrics</a>
+                                <a href="rheumatology.html">Rheumatology</a>
+                                <a href="urology.html">Urology</a>
+                                <a href="cardiology.html">Cardiology</a>
+                                <a href="gastroenterology.html">Gastroenterology</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <a href="book.html" class="link">Book Now</a>
+                    <a href="career.html" class="link">Career</a>
+                    <a href="whyus.html" class="link">Why US</a>
+                    <a href="contactus.html" class="link">Contact US</a>
+                </div>
+    
+                <!--search-->
+                <div class="search">
+                    <input type="search" id="search" placeholder="Enter Doctor or Specialty">
+                    <button id="bsearch" type="submit"> Search</button>
+                </div>
+                <!--sign in-->
+                <div class="sgin">
+                    <a href="login.html" class="link"> Login</a>
+                    <a href="sinup.html" class="link"> Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <script src="../js/specialitydelay.js"></script>
+    <script src="../js/anim.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menulist.js"></script>
+</body>
+
+</html>

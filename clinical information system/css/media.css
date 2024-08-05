@@ -1,0 +1,431 @@
+@media only screen and (max-width: 988px) {
+    :root {
+        --main-font-size: 16px;
+        --headlines-font-size: 25px;
+        --small-font-size: 12px;
+    }
+
+    .logo {
+        width: 15%;
+    }
+
+    .form {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .mySlides .text {
+        font-size: 35px;
+        text-align: center;
+        padding-top: 4%;
+        bottom: 200px;
+        height: 100px;
+    }
+
+    .contact-info {
+        margin-top: 3%;
+    }
+
+    .form-massage {
+        width: 100%;
+        padding: 20px;
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+
+    .form-title {
+        font-size: 20px;
+    }
+
+    .label-sty {
+        font-size: 15px;
+    }
+
+    .input-sty,
+    .select-sty {
+        width: 90%;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+
+
+    .bsubmit {
+        width: 60%;
+        height: 40px;
+        padding: 5px;
+        margin-left: 15%;
+        margin-bottom: 20px;
+    }
+
+    .remember,
+    .log {
+        font-size: var(--small-font-size);
+        margin-left: 25%;
+        padding-bottom: 10px;
+    }
+
+    .forget {
+        margin-bottom: 5%;
+    }
+
+    .forget a {
+        text-decoration: underline;
+    }
+
+    .whyus-container,
+    .contactus-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .whyustext,
+    .contact-info {
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    .video-div {
+        width: 100%;
+        margin-top: 5px;
+        margin-left: 0px;
+    }
+
+    .map {
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 3%;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .menubar,
+    .fa-bars,
+    .logo2 {
+        display: block;
+        margin-right: 5%;
+    }
+
+    .links,
+    .sgin {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .dropdown-hover {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 90px;
+        z-index: 200;
+        background-color: var(--background-color);
+        border: 2px solid var(--border-color);
+        box-shadow: 0px 0px 10px 0px var(--shadow-color);
+        border-radius: 20px;
+        width: 95%;
+        padding: 20px;
+        line-height: 2;
+    }
+
+    .dropdown-hover.show {
+        display: flex;
+        transition: .5s ease-in-out;
+    }
+
+    .dropdown-content {
+        display: none;
+        /* Hide dropdown content by default */
+    }
+
+    .dropdown-content.show {
+        display: block;
+        /* Show dropdown content when toggled */
+        transition: .5s ease-in-out;
+    }
+
+    .slidcard .drname {
+        font-size: var(--main-font-size);
+    }
+
+    .contactus-container .contact-info {
+        margin-left: -3%;
+        margin-top: -5%;
+    }
+
+    .map {
+        width: 90%;
+        margin-left: 3%;
+    }
+
+    .slider-img {
+        width: 50%;
+    }
+
+    .slidcard .slidtitle {
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    :root {
+        --main-font-size: 16px;
+        --headlines-font-size: 25px;
+        --small-font-size: 12px;
+    }
+
+    .mySlides .text {
+        font-size: 35px;
+        text-align: center;
+        padding-top: 4%;
+        bottom: 200px;
+        height: 100px;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .menubar,
+    .fa-bars,
+    .logo2 {
+        display: block;
+        margin-right: 5%;
+    }
+
+    .links,
+    .sgin {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .slidcard .drname {
+        font-size: var(--main-font-size);
+    }
+
+    .contactus-container .contact-info {
+        margin-left: -3%;
+        margin-top: -5%;
+    }
+
+    .map {
+        width: 90%;
+        margin-left: 3%;
+    }
+
+    #dots {
+        margin-top: -18%;
+    }
+
+    .slider-img {
+        width: 50%;
+        height: 350px;
+    }
+
+    .slidcard .slidtitle {
+        margin-top: 20%;
+    }
+
+    #drsection .prev,
+    #drsection .next {
+        top: 35%;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    :root {
+        --main-font-size: 14px;
+        --headlines-font-size: 25px;
+        --small-font-size: 12px;
+    }
+
+    .logo {
+        width: 20%;
+    }
+
+    .whycard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .img-sty {
+        display: none;
+    }
+
+    .whyinfo {
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .h1text {
+        font-size: var(--headlines-font-size);
+    }
+
+    .ptext {
+
+        font-size: var(--small-font-size);
+    }
+
+    .mySlides .text {
+        font-size: 30px;
+        text-align: center;
+        padding-top: 6%;
+        bottom: 200px;
+        height: 100px;
+    }
+
+    .htitle,
+    .copyright {
+        font-size: var(--small-font-size);
+    }
+
+    .socialmedia,
+    .install {
+        margin-bottom: 2%;
+    }
+
+    .copyright {
+        margin-top: 2%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row .card {
+        width: 100%;
+    }
+
+    .slidcard .drname {
+        font-size: var(--main-font-size);
+    }
+
+    .contactus-container .contact-info {
+        margin-left: -3%;
+        margin-top: -5%;
+    }
+
+    .map {
+        width: 90%;
+        margin-left: 3%;
+    }
+
+    #drsection .prev,
+    #drsection .next {
+        top: 32%;
+    }
+
+    #dots {
+        margin-top: -33%;
+    }
+
+    .slider-img {
+        width: 50%;
+        height: 300px;
+    }
+
+    .slidcard .slidtitle {
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    :root {
+        --main-font-size: 14px;
+        --headlines-font-size: 20px;
+        --small-font-size: 12px;
+    }
+
+    .mySlides .text {
+        font-size: 30px;
+        text-align: center;
+        padding-top: 10%;
+        bottom: 200px;
+        height: 100px;
+    }
+
+    .htitle,
+    .copyright {
+        font-size: var(--small-font-size);
+    }
+
+    .socialmedia,
+    .install {
+        margin-bottom: 2%;
+    }
+
+    .copyright {
+        margin-top: 2%;
+    }
+
+    .whycard {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .img-sty {
+        display: none;
+    }
+
+    .whyinfo {
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .h1text {
+        font-size: var(--headlines-font-size);
+    }
+
+    .whycard .ptext {
+        padding: 1%;
+        font-size: var(--small-font-size);
+    }
+
+    #dots {
+        margin-top: -50%;
+    }
+
+    .slider-img {
+        width: 50%;
+        height: 300px;
+    }
+
+    .slidcard .slidtitle {
+        margin-top: 50%;
+    }
+
+    .slidcard .drname {
+        font-size: var(--main-font-size);
+    }
+
+    #drsection .prev,
+    #drsection .next {
+        top: 30%;
+    }
+
+    .contactus-container .contact-info {
+
+        margin-left: -3%;
+        margin-top: -5%;
+    }
+
+    .labels {
+        margin-left: 1%;
+    }
+
+    .map {
+        width: 90%;
+        margin-left: 3%;
+    }
+}

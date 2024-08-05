@@ -1,0 +1,23 @@
+@import "stylehome.css";
+
+.job-requairs {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--black-font-color);
+}
+.job-requairs h5 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.card h3 , .card h5 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--black-font-color);
+}
+#alink {
+    font-size: 20px;
+    font-weight: 800;
+    padding-bottom: 2%;
+}

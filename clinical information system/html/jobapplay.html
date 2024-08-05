@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/main.js"></script>
+    <script src="https://kit.fontawesome.com/612befecb0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/stylehome.css">
+    <link rel="stylesheet" href="../css/stylejobapply.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"></div>
+    
+    <div class="form">
+        <form  action="">
+            <h1 class="form-title">Application Form</h1>
+            <div class="form-container">
+            <label class="label-sty" for="Username">Name : </label>   
+            <input class="input-sty" type="text" placeholder="Enter your name"n id="Username" required>
+            
+            <label  class="label-sty" for="email"> Email :</label>     
+            <input class="input-sty"  type="email" placeholder="example@gmail.com" id="mail" required>
+            
+            <label class="label-sty"  for="tel">Phone :</label>  
+            <input class="input-sty"  type="tel" placeholder="Enter your phone number" id="phone" pattern="[0]{1}[1]{1}[0-6]{1}[0-9]{8}"required>
+    
+            <label class="label-sty"  for="date"> Birthday :</label> 
+            <input class="input-sty"  type="date" id="date" placeholder="Enter your Birthday" required >
+    
+            <label class="label-sty"  for="colage">Eduction :</label> 
+            <input class="input-sty"  type="text" placeholder=" Enter your collage" id="colage" required>
+    
+            <label class="label-sty"  for="grade">Grade : </label> 
+            <input class="input-sty"  type="text" placeholder="Enter your grade" id="grade" required>
+    
+            <label class="label-sty"  for="datemin">Gradtion year :</label> 
+            <input class="input-sty"  type="date" id="datemin" name="datemin" required >
+    
+            <label class="label-sty"  for="title"> Job Title :</label> 
+            <select class="select-sty" name="title" id="title">
+                <option value="">----</option>
+                <option value="">Patient Experience Specialist</option>
+                <option value="">Female Receptionist</option>
+                <option value="">Nurse supervisor</option>
+    
+            </select> 
+            
+            <label class="label-sty"  for="cv">Upload CV</label>
+            <input class="input-sty"  type="file" id="cv">
+            
+            <button class="bsubmit" type="submit">Submit</button>
+            
+            </div>
+            
+        </form>
+    </div>
+    <div id="footer"></div>
+
+    <script src="../js/specialitydelay.js"></script>
+    <script src="../js/anim.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/menulist.js"></script>
+</body>
+</html>
