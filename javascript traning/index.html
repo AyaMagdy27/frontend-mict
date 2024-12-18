@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Zaka Calculation -->
+    <div class="containar">
+        <div class="calc">
+            <p>Calculation Your Zaka</p>
+            <div class="input-div">
+                <input type="number" id="num1" placeholder="Please Enter a valid number">
+                <button id="btn-calc" onclick="calc()">Calculation</button>
+            </div>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <!-- Login page -->
+    <div class="container">
+        <div class="login">
+            <p>Login</p>
+            <div class="login-div">
+                <input type="text" id="username" placeholder="Enter your username">
+                <input type="password" id="password" placeholder=" Enter your password">
+                <button id="btn-login" type="submit" onclick="login()">Login</button>
+            </div>
+            <p id="login-result"></p>
+        </div>
+    </div>
+
+    <!-- grades page -->
+    <section>
+        <div class="container">
+            <div class="grades">
+                <p>Grades</p>
+                <div class="grades-div">
+                    <input type="number" id="grade" placeholder="Enter your grade">
+                    <button id="btn-grade" onclick="grades()">Get Your Grades</button>
+                </div>
+                <p id="grade-result"></p>
+            </div>
+        </div>
+    </section>
+    <div class="discount">
+        <h2>Discount</h2>
+        <div class="discount-div">
+            <input type="text" id="name" placeholder="Enter Your name">
+            <input type="number" id="quantity" placeholder="Enter your quantity">
+            <input type="number" id="price" placeholder="Enter your price">
+            <input type="number" id="discount" placeholder="Enter your discount">
+            <button id="btn-discount" onclick="discount()">Get Your Discount</button>
+        </div>
+        <p id="discount-net"></p>
+        <p id="discount-discount"></p>
+        <p id="discount-result"></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

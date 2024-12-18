@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containar {
+    display: flex;
+    width: 30%;
+    margin: 5% auto;
+    }
+
+.calc {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    background: rgb(75, 75, 177);
+    color: white;
+    border-radius: 5px;
+}
+.input-div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.calc p {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.input-div input, #result {
+    width: 70%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+#result{
+    width: 70.5%;
+    background: rgb(255, 255, 255);
+    color: black;
+    height: 38px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+#btn-calc {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+}
+#btn-calc:hover {
+    background: rgb(132, 132, 212);
+    color: white;
+    cursor: pointer;
+}
+
+
+/*                    Login page              */
+
+.login {
+    display: flex;
+    width: 30%;
+    margin: 1% auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: rgb(75, 75, 177);
+    color: white;
+    border-radius: 5px;
+    padding: 2%;
+}
+.login-div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.login p {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.login-div input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+#btn-login {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+#btn-login:hover {
+    background: rgb(132, 132, 212);
+    color: white;
+    cursor: pointer;
+}
+
+/*                    Grades page              */
+.grades {
+    display: flex;
+    width: 30%;
+    margin: 1% auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: rgb(75, 75, 177);
+    color: white;
+    border-radius: 5px;
+    padding: 2%;
+}
+.grades-div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.grades p {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.grades-div input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+#btn-grade {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    font-size: 16px;
+}
+#btn-grade:hover {
+    background: rgb(132, 132, 212);
+    color: white;
+    cursor: pointer;
+}
+
+#grade-result {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255);
+    color: black;
+    height: 38px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/*                    discount page              */
+.discount {
+    display: flex;
+    width: 30%;
+    margin: 1% auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background: rgb(75, 75, 177);
+    color: white;
+    border-radius: 5px;
+    padding: 2%;
+}
+
+.discount h2 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+
+.discount-div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 10px 0;
+}
+.discount-div input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+#btn-discount {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    margin-top: 2%;
+}
+.discount p {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: rgb(255, 255, 255);
+    color: black;
+    height: 38px;
+    padding: 10px;
+    font-size: 16px;
+}
