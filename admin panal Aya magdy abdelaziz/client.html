@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin-style.css">
+    <script src="https://kit.fontawesome.com/612befecb0.js" crossorigin="anonymous"></script>
+    <title> Add Product</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h1>Promax</h1>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="admin-index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-customer.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span> Clients</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-product.html">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>Products</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="admin-.html">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>Payment</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="admin-order.html">
+                        <i class="fa-solid fa-clipboard"></i>
+                        <span>Orders</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-contact.html">
+                        <i class="fa-solid fa-file"></i>
+                        <span>Reports</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-setting.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Setting</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-search"></i>
+            </div>
+
+            <div class="user">
+                <i class="fa-solid fa-user"></i>
+                <span>Admin</span>
+                <i class="fa-solid fa-chevron-down"></i>
+                <!-- <div class="log">
+                    <a href="#">Logout</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="add-product">
+        <div class="product-form">
+            <h2>Add New Client</h2>
+            <div class="left">
+                <div class="draf">
+                    <i class="fa-solid fa-clipboard"></i>
+                    <p>
+                        Save Draft
+                    </p>
+                </div>
+                <div class="done">
+                    <i class="fa-solid fa-check"></i>
+                    <p>
+                        Add Client
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="recent">
+        <div class="client-info">
+            <p>Client Information</p>
+            <div class="client-id">
+                <label for="client-id"> Id :</label>
+                <input type="text" id="client-id" placeholder="Enter Id">
+            </div>
+            
+            <div class="client-name">
+                <label for="client-name"> Name :</label>
+                <input type="text" id="client-name" placeholder="Enter Name">
+            </div>
+
+            <div class="client-email">
+                <label for="client-email"> Email :</label>
+                <input type="email" id="client-email" placeholder="Enter Email">
+            </div>
+
+            <div class="client-phone">
+                <label for="client-phone"> Phone :</label>
+                <input type="text" id="client-phone" placeholder="Enter Phone">
+            </div>
+
+            <div class="client-address">
+                <label for="client-address"> Address :</label>
+                <input type="text" id="client-address" placeholder="Enter Address">
+            </div>
+
+            <div class="client-state">
+                <label for="client-state"> State :</label>
+                <input type="text" id="client-state" placeholder="Enter State">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/add-img.js"></script>
+</body>
+
+</html>

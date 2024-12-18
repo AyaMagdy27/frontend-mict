@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin-style.css">
+    <script src="https://kit.fontawesome.com/612befecb0.js" crossorigin="anonymous"></script>
+    <title> Add Product</title>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <h1>Promax</h1>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li>
+                    <a href="admin-index.html">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Dashboard</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-customer.html">
+                        <i class="fa-solid fa-user"></i>
+                        <span> Clients</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-product.html">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>Products</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+                <!-- <li>
+                    <a href="admin-.html">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <span>Payment</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li> -->
+                <li>
+                    <a href="admin-order.html">
+                        <i class="fa-solid fa-clipboard"></i>
+                        <span>Orders</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-contact.html">
+                        <i class="fa-solid fa-file"></i>
+                        <span>Reports</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin-setting.html">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Setting</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="header">
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-search"></i>
+            </div>
+
+            <div class="user">
+                <i class="fa-solid fa-user"></i>
+                <span>Admin</span>
+                <i class="fa-solid fa-chevron-down"></i>
+                <!-- <div class="log">
+                    <a href="#">Logout</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="add-product">
+        <div class="product-form">
+            <h2>Add New Product</h2>
+            <div class="left">
+                <div class="draf">
+                    <i class="fa-solid fa-clipboard"></i>
+                    <p>
+                        Save Draft
+                    </p>
+                </div>
+                <div class="done">
+                    <i class="fa-solid fa-check"></i>
+                    <p>
+                        Add Product
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="add-card">
+        <div class="product-card">
+        <div class="prodacts-form">
+            <div class="product-details">
+                <p>Gemeral Information </p>
+                <div class="product-name">
+                    <label for="product-name">Product Name</label>
+                    <input type="text" id="product-name" placeholder="Enter Product Name">
+                </div>
+                <div class="product-code">
+                    <label for="product-code">Product code</label>
+                    <input type="text" id="product-code" placeholder="Enter Product code">
+                </div>
+                <div class="product-stock">
+                    <label for="product-stock">Product stock</label>
+                    <input type="number" id="product-stock" placeholder="Enter Product stock">
+                <div class="product-price">
+                    <label for="product-price">Product Price</label>
+                    <input type="text" id="product-price" placeholder="Enter Product Price">
+                </div>
+                <div class="product-category">
+                    <label for="product-category">Product Category</label>
+                    <select name="product-category" id="product-category">
+                        <option value="1">product 1</option>
+                        <option value="2">product 2</option>
+                        <option value="3">product 3</option>
+                        <option value="4">product 4</option>
+                    </select>
+                </div>
+                <div class="product-size">
+                    <label for="product-size">Product Size</label>
+                    <select name="product-size" id="product-size">
+                        <option value="1">Size 1</option>
+                        <option value="2">Size 2</option>
+                        <option value="3">Size 3</option>
+                        <option value="4">Size 4</option>
+                    </select>
+                </div>
+                <div class="product-description">
+                    <label for="product-description">Product Description</label>
+                    <textarea name="product-description" id="product-description" cols="30" rows="10"
+                        placeholder="Enter Product Description"></textarea>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+        <div class="upload-img">
+            <div class="label-div">
+                <p>Upload Image</p>
+                <div class="img-border">
+                    <label for="fileInput"><i class="fa-solid fa-circle-plus"></i></label>
+                    <input type="file" id="fileInput" accept="image/*" multiple>
+                </div>
+            </div>
+            <div id="preview"></div>
+        </div>
+    </div>
+    <script src="js/add-img.js"></script>
+</body>
+
+</html>
