@@ -1,0 +1,1512 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--heading-font);
+}
+
+/* media Quares for different screens */
+
+@media screen and (min-width: 992px) {
+    nav {
+        padding-left: 15px;
+        padding-right: 10px;
+    }
+}
+
+/* main colors and font  */
+
+:root {
+    --primary-color: #DC0714;
+    --secondary-color: #f5f5f5;
+    --background-hover-color: #f32b2b;
+    --background-mediam-color: #b71515;
+    --background-dark-color: #911712;
+    --font-color: #000;
+    --hover-color: #a7a6a62d;
+    --hover-color-dark: #31313142;
+    --list-color-light: #00000081;
+    --body-font: Arial, Helvetica, sans-serif;
+    --heading-font: Arial, Helvetica, sans-serif;
+    --heading-font-size: 14px;
+    --list-font-size: 20px;
+    --font--size-mediam: 16px;
+    --backgeound-btn-color: black;
+    --btnhover-color: #461616;
+    --color-light: #0000008e;
+    --special-color: #00634D;
+    --hover-color-mediam: #000000b9;
+    --font-size-large: 40px;
+    --btn-yellow: #ffd700;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* container of hero section */
+.herodiv {
+    width: 100%;
+    height: 220vh;
+    margin-top: -5%;
+    background-color: var(--primary-color);
+    position: absolute;
+    z-index: -1;
+}
+
+/* start of the nav bar */
+.headerdiv {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px 20px;
+    height: 65px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+/* hover for header */
+nav .navbar::after {
+    content: '';
+    display: none;
+    width: 95.4%;
+    margin-left: -11.9%;
+    background-color: var(--background-hover-color);
+    color: var(--secondary-color);
+    padding: 0 30px;
+    height: 65px;
+    position: absolute;
+    z-index: -1;
+    transition: width .3s;
+}
+
+nav .navbar.hovered::after {
+    display: block;
+}
+
+
+/* logo header style */
+.logo {
+    width: 90px;
+    margin-top: -5px;
+    margin-right: 40px;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo2 {
+    display: none;
+    width: 90px;
+    margin-top: -5px;
+    margin-right: 40px;
+    position: relative;
+    z-index: 1000;
+    font-weight: 400;
+    font-size: 30px;
+    color: white;
+}
+
+
+/* links in header */
+.link,
+.linksp,
+.linklog,
+.linkicon,
+.linklog1 {
+    color: var(--secondary-color);
+    font-size: var(--heading-font-size);
+    font-family: var(--heading-font);
+    font-weight: 600;
+}
+
+.linksp {
+    display: flex;
+    align-items: center;
+}
+
+.usericon {
+    height: 21px;
+    padding-left: 20px;
+    margin-top: -4px;
+}
+
+.linklog {
+    margin-left: 20px;
+}
+
+/* join butun and Icon */
+.join {
+    display: flex;
+    height: 30px;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding-top: 7px;
+    border-left: 2px solid var(--hover-color);
+}
+
+.fa-globe {
+    margin-right: 5px;
+    margin-top: 9px;
+}
+
+/* lang div and icon */
+.fa-chevron-down {
+    margin-top: 6px;
+    margin-left: 4px;
+}
+
+.lang {
+    display: flex;
+    height: 30px;
+    margin-top: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: -10px;
+    border-right: 2px solid var(--hover-color);
+}
+
+.login {
+    display: flex;
+    height: 30px;
+    padding-left: 20px;
+    margin-top: -4px;
+    justify-content: space-between;
+    border-left: 2px solid var(--hover-color);
+}
+
+/* last image in header */
+.image {
+    width: 100%;
+    height: 100%;
+    margin-top: 2px;
+    margin-left: 10px;
+
+}
+
+.linklog1:hover,
+.linklog:hover {
+    color: var(--hover-color);
+}
+
+/* end of the nav bar */
+
+/* start of the hover div */
+.hoverdiv {
+    display: none;
+    width: 90%;
+    height: 80%;
+    background-color: var(--secondary-color);
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 900;
+    top: 65px;
+    left: 5%;
+}
+
+.hoverdiv.active {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+.newsdiv {
+    width: 100%;
+    height: 100%;
+    transition: width .3s;
+    padding: 4% 3%;
+    line-height: 1.5;
+    color: var(--secondary-color);
+    position: relative;
+    z-index: 400;
+}
+
+.spe {
+    color: var(--font-color);
+    font-size: var(--list-font-size);
+    font-weight: 600;
+    margin-bottom: 5%;
+}
+
+.sp1 {
+    color: var(--secondary-color);
+    font-size: var(--list-font-size);
+    font-weight: 500;
+    margin-bottom: 5%;
+
+}
+
+.hoverdiv .newsdiv li a {
+    font-size: var(--list-font-size);
+    font-weight: 400;
+    color: var(--font-color);
+    line-height: 2;
+}
+
+.hoverdiv .newsdiv li a:hover {
+    color: var(--primary-color);
+}
+
+.dropdowndiv {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 300;
+}
+
+.dorpdowncard {
+    background-color: var(--primary-color);
+    width: 30%;
+    justify-items: center;
+    padding: 1.3%;
+}
+
+.btndiv {
+    background-color: var(--backgeound-btn-color);
+    padding: 5px 10px;
+    font-size: var(--list-font-size);
+    font-weight: 600;
+    padding: 20px 70px 30px 15px;
+}
+
+.btndiv:hover {
+    background-color: var(--btnhover-color);
+    -webkit-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.btnregister {
+    border: none;
+    font-size: var(--list-font-size);
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.btnregister:hover .fa-angle-right {
+    color: var(--secondary-color);
+    animation: move 1.5s ease-in-out infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.hoverdiv .footerdiv {
+    display: flex;
+    width: 100%;
+    height: 15px;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--list-color-light);
+    font-size: var(--heading-font-size);
+    position: relative;
+    top: 50px;
+    z-index: 1000;
+    border-top: var(--list-color-light) .5px solid;
+    padding: 2%;
+    z-index: 300;
+}
+
+.spe3 {
+    color: var(--font-color);
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.holder {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.soicalicons {
+    padding-top: 10px;
+    margin-right: 20px;
+    position: relative;
+    z-index: 300;
+    padding-bottom: 1%;
+}
+
+.imgsocialstyle {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.imgsocialstyle1 {
+    padding-top: 4px;
+    width: 56px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.linkfooter {
+    display: flex;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 3px;
+}
+
+.footerdiv .holder .linkfooter li a {
+    font-size: var(--heading-font-size);
+    margin-left: 20px;
+}
+
+.linkfooter a:hover {
+    color: var(--primary-color);
+}
+
+/* end of the hover div */
+
+
+/* start of main div */
+.main {
+    position: relative;
+    z-index: 200;
+    margin-bottom: 7%;
+}
+
+.main .icons,
+.main2 .icons {
+    display: flex;
+    width: 94%;
+    height: 100%;
+    padding-top: 5%;
+    padding-left: 6.5%;
+    justify-content: space-between;
+    position: relative;
+    z-index: 200;
+}
+
+.main .icons .wordlable {
+    font-size: var(--heading-font-size);
+    color: var(--secondary-color);
+    height: 35px;
+    font-weight: 600;
+    border: 0px solid var(--hover-color);
+    border-radius: 40px;
+    background-color: rgba(39, 36, 36, 0.199);
+    align-items: center;
+    padding: 9px 15px 2px;
+}
+
+.main .icons .btnnews {
+    display: flex;
+    padding: 5px 10px;
+    font-size: var(--heading-font-size);
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.main .icons .fa-angle-right {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.main .icons .btnnews:hover .fa-angle-right {
+    animation: move 1.5s ease-in-out infinite;
+}
+
+/* cards section */
+.cards {
+    display: flex;
+    width: 94%;
+    height: 100%;
+    padding-top: 5%;
+    padding-left: 6.5%;
+    justify-content: space-between;
+    margin-bottom: 1%;
+    z-index: 200;
+}
+
+.cards .card {
+    width: 30%;
+    text-align: center;
+    background-color: var(--primary-color);
+    border: 0px solid var(--hover-color);
+    padding: 20px 20px;
+    margin-right: 10px;
+    border-bottom: var(--hover-color) 1px solid;
+}
+
+.cards .cardimg {
+    width: 98%;
+    margin-bottom: 2%;
+}
+
+.cards .card .cardtext {
+    font-size: var(--heading-font-size);
+    text-align: start;
+    color: var(--font-color);
+    margin-bottom: 5%;
+}
+
+.cards .card .cardtext .cardtitle {
+    font-size: var(--heading-font-size);
+    font-weight: 500;
+    color: var(--list-color-light);
+    margin-bottom: 2%;
+}
+
+.cards .card .cardtext p {
+    font-size: var(--list-font-size);
+    font-weight: 500;
+    color: var(--secondary-color);
+    margin-bottom: 1%;
+}
+
+.cards .card:hover,
+.cards .cardsp:hover {
+    background-color: var(--background-hover-color);
+}
+
+/* special card */
+.cards .cardsp {
+    width: 30%;
+    height: 500px;
+    background-color: var(--primary-color);
+    border: 0px solid var(--hover-color);
+    padding: 20px 20px;
+    margin-right: 10px;
+}
+
+.cards .cardsp .special {
+    width: 100%;
+    height: 480px;
+    background-color: var(--special-color);
+    border: 0px solid var(--hover-color);
+    padding: 20px 10px;
+    margin-right: 10px;
+    border-bottom: var(--hover-color) 1px solid;
+}
+
+.cards .cardsp .special .btndiv {
+    width: 90%;
+    margin-left: 5%;
+}
+
+.main .cards .cardsp .special .cardtextsp p {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: start;
+    color: var(--secondary-color);
+    margin-bottom: 5%;
+    line-height: 1.2;
+}
+
+.main .cards .cardsp .special .cardtextsp span {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.cards .cardimgsp {
+    width: 50%;
+    margin-left: 20px;
+}
+
+.imgsp {
+    margin-top: 5%;
+    text-align: end;
+    margin-bottom: 6%;
+}
+
+/* end of main div */
+
+/* shop section */
+.shopdiv {
+    width: 95%;
+    height: 100%;
+    padding-top: 5%;
+    padding-left: 7%;
+    flex-wrap: wrap;
+}
+
+.shopdiv .shoptitle {
+    font-size: var(--heading-font-size);
+    color: var(--secondary-color);
+    width: 10%;
+    height: 35px;
+    font-weight: 600;
+    border-radius: 40px;
+    background-color: var(--font-color);
+    padding: 9.5px 20px;
+}
+
+.shopdiv .shoplinks ul {
+    display: flex;
+    height: 100%;
+    padding-top: 3%;
+    border-bottom: 1px solid var(--hover-color);
+
+}
+
+.shopdiv .shoplinks ul li a {
+    font-size: var(--font--size-mediam);
+    color: var(--color-light);
+    font-weight: 600;
+    padding-bottom: 10%;
+    margin-right: 20px;
+}
+
+.shopdiv .shoplinks ul li .linksp {
+    color: var(--font-color);
+    border-bottom: 2.5px solid var(--primary-color);
+}
+
+.shopdiv .shoplinks ul li .linkshop:hover {
+    color: var(--hover-color-mediam);
+}
+
+.shopcards {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-top: 3%;
+    justify-content: space-between;
+    margin-bottom: 2.5%;
+}
+
+.shopcards .shopcard {
+    width: 20%;
+    text-align: center;
+    border: 1px solid var(--font-color);
+    margin-right: 10px;
+}
+
+.shopcards .shopcard .shopimgcard {
+    width: 100%;
+    background-color: var(--hover-color);
+}
+
+.shopcards .shopcard .shopimgcard .shopimg {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.shopcards .shopcard .cardinfo {
+    padding: 20px 10px;
+    text-align: start;
+}
+
+.shopcards .shopcard .cardinfo .shoph3 {
+    font-size: var(--heading-font-size);
+    font-weight: 500;
+    color: var(--color-light);
+    margin-bottom: 15%;
+}
+
+.shopcards .shopcard .cardinfo .shoph1 {
+    font-size: var(--font-size-large);
+    font-weight: 700;
+    color: var(--font-color);
+    margin-bottom: 5%;
+}
+
+.shopcards .shopcard .cardinfo .btndiv {
+    display: flex;
+    font-size: var(--heading-font-size);
+    color: var(--secondary-color);
+    padding: 5px 10px;
+    font-weight: 400;
+    padding: 20px 70px 30px 15px;
+}
+
+.shopcards .shopcard .cardinfo .btndiv:hover {
+    background-color: var(--list-color-light);
+    -webkit-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.shopcards .shopcard .cardinfo .btnregister {
+    border: none;
+    font-size: var(--list-font-size);
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding-right: 4%;
+}
+
+.shopcards .shopcard .cardinfo .fa-angle-right {
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.shopcard .btndiv:hover .fa-angle-right {
+    animation: move 1.5s ease-in-out infinite;
+}
+
+.shopcards .shopcard .cardinfo:hover {
+    animation: movey 1.5s ease-in-out infinite;
+}
+
+@keyframes movey {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+.shopdiv .btnyellow {
+    display: flex;
+    width: 25%;
+    font-size: var(--font--size-mediam);
+    background-color: var(--btn-yellow);
+    padding: 1.5% 3% 2.5% 1.5%;
+    font-weight: 700;
+    margin-bottom: 5%;
+    margin-left: 35%;
+}
+
+.shopdiv .btnyellow:hover {
+    background-color: #f5d100;
+    -webkit-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.shopdiv .btnyellow .fa-angle-right {
+    margin-top: 1.5%;
+    margin-left: 2%;
+}
+
+.shopdiv .btnyellow:hover .fa-angle-right {
+    animation: move 1.5s ease-in-out infinite;
+}
+
+/* shop section end */
+
+/* Pre season section start  */
+.prediv {
+    background-color: var(--secondary-color);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.prediv .preicons {
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 2.5%;
+    justify-content: space-between;
+}
+
+.prediv .prelable {
+    font-size: var(--heading-font-size);
+    color: var(--secondary-color);
+    width: 10%;
+    height: 35px;
+    font-weight: 600;
+    border-radius: 40px;
+    background-color: var(--font-color);
+    padding-top: .7%;
+    padding-left: 1.4%;
+}
+
+.prediv .precalec {
+    display: flex;
+    width: 21%;
+    padding: .5%;
+    background-color: var(--btn-yellow);
+    border-radius: 50px;
+    cursor: pointer;
+    margin-left: 50%;
+}
+
+.prediv .precalec p {
+    font-size: var(--heading-font-size);
+    font-weight: 600;
+    margin-left: 3%;
+    color: var(--font-color);
+    margin-top: 2.5%;
+}
+
+.prediv .preicons .btnfix {
+    display: flex;
+    width: 10%;
+    margin-left: 2%;
+    margin-top: .8%;
+}
+
+.prediv .preicons .btnfix p {
+    font-size: var(--heading-font-size);
+    font-weight: 600;
+    color: var(--font-color);
+    margin-right: 5%;
+}
+
+.prediv .preicons .btnfix .fa-angle-right {
+    margin-top: 1.5%;
+    margin-left: 2%;
+}
+
+.prediv .preicons .btnfix p:hover {
+    color: var(--list-color-light);
+}
+
+.prediv .preicons .btnfix:hover .fa-angle-right {
+    animation: move 1.5s ease-in-out infinite;
+    cursor: pointer;
+}
+
+/* slider container */
+
+
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgb(31, 28, 28);
+    color: rgb(255, 252, 252);
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slider-button.hidden {
+    display: none;
+}
+
+.precards {
+    display: flex;
+    margin-left: 5%;
+}
+
+.prediv .precards .precard {
+    width: 400px;
+    text-align: start;
+    border: 1px solid var(--font-color);
+    margin-right: 10px;
+    padding: .6%;
+    cursor: grab;
+}
+
+.prediv .precards .precard h4 {
+    margin-bottom: 3%;
+}
+
+.prediv .precards .precard .sph4 {
+    margin-bottom: 20%;
+    color: var(--list-color-light);
+}
+
+.prediv .precards .precard .team1,
+.team2 {
+    display: flex;
+    padding-bottom: 5%;
+}
+
+.prediv .precards .precard .team2 {
+    margin-top: 3%;
+}
+
+.prediv .precards .precard .team1 {
+    border-bottom: 1px solid var(--hover-color-mediam)
+}
+
+.prediv .precards .precard .team1 p,
+.team2 p {
+    font-size: var(--list-font-size);
+    font-weight: 500;
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.prediv .precards .precard .btnticket {
+    display: flex;
+    font-size: var(--list-font-size);
+    background-color: var(--font-color);
+    color: var(--secondary-color);
+    padding: 6% 6% 10%;
+    font-weight: 600;
+    margin-top: 7%;
+}
+
+.prediv .precards .precard .btnticket .textticket {
+    margin-left: 3%;
+}
+
+.prediv .precards .precard .btnticket .fa-angle-right {
+    margin-top: .3%;
+    margin-left: 2.2%;
+}
+
+.prediv .precards .precard .btnticket:hover {
+    background-color: var(--hover-color-mediam);
+    -webkit-transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 150ms cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.prediv .precards .precard .btnticket:hover .fa-angle-right {
+    animation: move 1.5s ease-in-out infinite;
+}
+
+/* Pre season section end  */
+
+/* main1 start */
+#main1 {
+    background-color: var(--primary-color);
+    padding-bottom: 5%;
+    position: relative;
+}
+
+/* main1 end */
+
+/* have you seen section start */
+
+.seendiv {
+    width: 95%;
+    padding-left: 5%;
+    margin-bottom: 7%;
+    padding-top: 10px;
+    position: relative;
+    z-index: 800;
+}
+
+.seendiv .headlable {
+    font-size: var(--heading-font-size);
+    color: var(--secondary-color);
+    width: 12%;
+    height: 35px;
+    font-weight: 600;
+    border-radius: 40px;
+    background-color: var(--font-color);
+    padding-top: .7%;
+    padding-left: 1.2%;
+    margin-left: 17%;
+}
+
+.seendiv .move-both {
+    display: flex;
+    width: 100%;
+    padding-top: 1.5%;
+    justify-content: space-between;
+}
+
+.seendiv .move-both .main-div {
+    width: 70%;
+    background-color: var(--hover-color);
+    text-align: center;
+    margin-left: 16%;
+    cursor: pointer;
+    padding-bottom: 1%;
+    position: relative;
+    line-height: 1.3;
+    transition: transform 0.3s ease-in-out;
+}
+
+.seendiv .move-both .main-div .seenimg img {
+    width: 96%;
+    height: 695px;
+}
+
+.seendiv .move-both .main-div p {
+    font-size: var(--font-size-large);
+    font-weight: 400;
+    color: var(--font-color);
+    margin-top: 2%;
+    text-align: start;
+    margin-left: 2.5%;
+}
+
+.seendiv .move-both .main-div p span {
+    font-size: var(--list-font-size);
+    font-weight: 700;
+    margin-right: 1%;
+}
+
+.seendiv .move-both .main-div .sp {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--list-color-light);
+    margin-left: 2.5%;
+    margin-bottom: 6%;
+
+}
+
+.seendiv .move-both .slider-y {
+    width: 25%;
+    justify-content: space-between;
+    margin-right: 5%;
+    margin-left: 65%;
+    padding-bottom: 1%;
+    position: absolute;
+    cursor: pointer;
+    z-index: 700;
+    animation: silder-yanime duration timing-function delay iteration-count direction fill-mode;
+}
+
+
+.seendiv .move-both .slider-y .slider-y-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.seendiv .move-both .slider-y .slider-y-container .slider-y-wrapper {
+    display: flex;
+    flex-direction: column;
+    transition: transform 10s ease-in-out;
+    margin-top: 100%;
+    background-color: var(--secondary-color);
+}
+
+.seendiv .move-both .slider-y .slider-y-container  .seencards {
+    width: 100%;
+    cursor: pointer;
+}
+.seencard {
+    width: 95%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    border-bottom: 2px solid var(--hover-color-dark);
+    cursor: pointer;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+
+.seencard .seencardimg img {
+    width: 100%;
+}
+
+.seencard .seencardtext {
+    font-size: var(--heading-font-size);
+    font-weight: 600;
+    padding: 5%;
+    text-align: start;
+}
+
+.seencardtitle {
+    font-size: var(--heading-font-size);
+    font-weight: 600;
+    color: var(--font-color);
+    margin-bottom: 5%;
+}
+.seenhover {
+    width: 100%;
+}
+.seenhover:hover {
+    background-color: var(--hover-color);
+}
+.seencard:hover .seencardtext {
+    animation: movey 1.5s ease-in-out infinite;
+}
+
+/* Base styles for the sidebar */
+.slider-y {
+    position: absolute;
+    transition: top 0.3s ease-in-out; /* Adjust the duration for smoothness */
+}
+
+/* Keyframe animation for gradual scrolling */
+@keyframes smoothScroll {
+    from {
+        scroll-behavior:smooth;
+    }
+    to {
+        top: 100px; /* Adjust this value based on your desired final position */
+    }
+}
+
+/* Apply the animation when the sidebar is fixed */
+.fixed-sidebar {
+    animation: smoothScroll 1s ease-in-out forwards; /* Adjust duration as needed */
+}
+
+
+.fixed-seendiv {
+    position: static;
+    top: 0  ;
+    width: 100%;
+    background-color: #ffffff; /* Optional: to ensure it's visible over other content */
+    z-index: 800;
+}
+/* have you seen section end */
+
+
+/* men top scorers section start */
+
+.prelable1 {
+    font-size: var(--heading-font-size);
+    color: var(--secondary-color);
+    width: 14%;
+    height: 35px;
+    font-weight: 600;
+    border-radius: 40px;
+    background-color: var(--font-color);
+    padding-top: .7%;
+    padding-left: 1.2%;
+}
+
+.precards .precard .topcard {
+    display: flex;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 5%;
+    padding-top: 2%;
+    justify-content: space-between;
+}
+
+.precards .precard .topcard img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+.precards .precard .topcard .topinfo {
+    width: 50%;
+}
+
+.precards .precard .topcard .topinfo h1 {
+    font-size: 80px;
+    font-weight: 600;
+    color: var(--font-color);
+    margin-bottom: 5%;
+}
+
+.precards .precard .topcard .topinfo p {
+    font-size: var(--list-font-size);
+    font-weight: 600;
+    color: var(--font-color);
+    margin-bottom: 5%;
+}
+
+.precards .precard .topcard .topinfo .sph4 {
+    font-size: var(--font--size-mediam);
+    color: var(--list-color-light);
+    margin-bottom: 5%;
+}
+
+.precards .precard .spp p {
+    font-size: var(--list-font-size);
+    font-weight: 600;
+    color: var(--color-light);
+}
+
+.precards .precard .topscore {
+    display: flex;
+    width: 95%;
+    margin-left: 2.5%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    padding: 5% 2%;
+    border: 2px solid;
+    border-color: transparent var(--hover-color) var(--hover-color) transparent;
+    justify-content: space-between;
+}
+
+.precards .precard .topscore p {
+    font-size: var(--list-font-size);
+    font-weight: 500;
+    color: var(--hover-color-mediam);
+
+}
+
+.topdiv {
+    display: flex;
+    padding-top: 10%;
+    margin-left: 20%;
+    margin-right: 3px;
+    margin-bottom: 1%;
+    justify-content: end;
+}
+
+.precard .topdiv .btnfix {
+    display: flex;
+    width: 40%;
+    margin-top: .8%;
+}
+
+.precard .topdiv .btnfix p {
+    font-size: var(--heading-font-size);
+    font-weight: 600;
+    color: var(--list-font-size);
+    margin-right: 3%;
+}
+
+.precard .topdiv .btnfix .fa-angle-right {
+    margin-top: .5%;
+    margin-left: 1%;
+}
+
+.precard .topdiv .btnfix:hover {
+    color: var(--list-color-light);
+}
+
+.precard .topdiv .btnfix:hover .fa-angle-right {
+    animation: move 1.5s ease-in-out infinite;
+    cursor: pointer;
+}
+
+/* men top scorers section end */
+
+/* swift sectin start */
+.swiftdiv {
+    padding-top: 9%;
+    padding-bottom: 5%;
+    background-color: var(--btn-yellow);
+}
+.swiftmain {
+    width: 70%;
+    justify-content: space-between;
+    padding: 20px;
+    margin-left: 20%;
+}
+
+.swiftdiv p {
+    font-size: var(--heading-font-size);
+    font-weight: 600;
+    color: var(--font-color);
+    margin-bottom: 1.5%;
+}
+.headline {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+.gallery {
+    width: 40%;
+    font-weight: bold;
+    font-size: var(--list-font-size);
+    margin-bottom: 3%;
+    padding-top: 3%;
+    border-top: 2px solid rgba(0, 0, 0, 0.281);
+}
+.gallery span {
+    font-weight: normal;
+}
+.image-container {
+    width: 100%;
+    max-width: 600px;
+}
+.image-container img {
+    width: 65%;
+    height: auto;
+}
+
+.fa-circle-chevron-right {
+    font-size: 30px;
+    color: var(--font-color);
+}
+.fa-circle-chevron-right:hover {
+animation: move 1.5s ease-in-out infinite;
+}
+
+/* swift section end */
+
+
+/* main2  start*/
+
+#main2 .icons .wordlable {
+    font-size: var(--heading-font-size);
+    color: var(--secondary-color);
+    height: 35px;
+    font-weight: 600;
+    border: 0px solid var(--hover-color);
+    border-radius: 40px;
+    background-color: var(--font-color);
+    align-items: center;
+    padding: 9px 15px 2px;
+}
+
+#main2 .icons .btnnews {
+    color: var(--font-color);
+}
+
+#main2 .cards .card {
+    background-color: white;
+    border: 0px solid var(--hover-color);
+    padding: 20px 20px;
+    margin-right: 10px;
+    border-bottom: var(--hover-color) 1px solid;
+}
+
+#main2 .cards .card .cardtext {
+    font-size: var(--heading-font-size);
+    text-align: start;
+    color: var(--font-color);
+    margin-bottom: 5%;
+}
+
+#main2 .cards .card .cardtext .cardtitle {
+    font-size: var(--heading-font-size);
+    font-weight: 500;
+    color: var(--list-color-light);
+    margin-bottom: 2%;
+}
+
+#main2 .cards .card .cardtext p {
+    font-size: var(--list-font-size);
+    font-weight: 500;
+    color: var(--font-color);
+    margin-bottom: 1%;
+    margin-top: 15%;
+}
+
+#main2 .cards .card:hover {
+    background-color: var(--hover-color);
+}
+
+#main2 .cards .card .cardtext:hover {
+    animation: movey 1.5s ease-in-out infinite;
+}
+
+/* main2 end */
+
+/* memorial secion start */
+.memorial {
+    display: flex;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+
+.memorial img {
+    width: 46%;
+}
+
+.memorial .sp {
+    margin-right: 3%;
+}
+
+/* memorial secion end */
+
+/* cups start */
+
+.cupsdiv {
+    height: 250px;
+    background-color: var(--hover-color);
+}
+
+.cupsdiv .cups {
+    display: flex;
+    width: 90%;
+    padding-top: 4%;
+    margin-left: 5%;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.cupsdiv .cups .cupsimg .cupimg {
+    width: 100px;
+    margin-bottom: 15%;
+}
+
+/* cups end */
+
+/* brands start */
+.brand {
+    display: flex;
+    padding: 5% 2%;
+    background-color: var(--primary-color);
+    justify-content: space-evenly;
+}
+
+.brand img {
+    width: 15%;
+}
+
+/* brands end */
+
+/* sponsors secion start  */
+
+.sponsors {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 2% 0 7%;
+    background-color: var(--background-mediam-color);
+    justify-content: center;
+}
+
+.sponsors img {
+    width: 6%;
+    margin-bottom: 5%;
+    margin-right: 6%;
+}
+
+/* sponsors secion end  */
+
+/* footer section start */
+.footer {
+    background-color: var(--background-dark-color);
+    color: var(--secondary-color);
+    padding: 3% 0;
+    text-transform: uppercase;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column a {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    margin-left: 47%;
+    margin-bottom: -10px;
+}
+
+.footer-social a {
+    color: var(--secondary-color);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.footer-social a img {
+    width: 30px;
+    height: auto;
+}
+
+.footer-app {
+    display: flex;
+    align-items: center;
+}
+
+.footer-app p {
+    margin-top: 1%;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.app-link {
+    margin-right: 10px;
+}
+
+.app-link img {
+    width: 135px;
+    height: auto;
+}
+.spfootericon .apple {
+    width: 120px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    padding-top: 3%;
+    border-top: 1px solid var(--hover-color);
+    line-height: 1.5;
+}
+
+.footer-social .f, .footer-social .f1 {
+    width: 40px;
+}
+.f1 {
+    margin-bottom: 7px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 10px 0;
+    }
+
+    .footer-social {
+        margin: 10px 0;
+    }
+
+    .footer-app {
+        margin: 10px 0;
+    }
+}
+
+.footer-column a:hover {
+    color: var(--hover-color);
+}
+/* footer secion end */
